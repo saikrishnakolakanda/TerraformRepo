@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "teraformhkhtecre"
-    key    = "terraform.tfstate"
+    key    = "Day6/terraform.tfstate"
     region = "us-east-1"
     use_lockfile = true
     #dynamodb_table = "terra"
