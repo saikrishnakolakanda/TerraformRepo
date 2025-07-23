@@ -1,0 +1,1 @@
+bucket = "kingkon-hsjwhjdhnjsdn"
