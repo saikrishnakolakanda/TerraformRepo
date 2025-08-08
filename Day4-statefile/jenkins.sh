@@ -13,13 +13,13 @@ pipeline {
         TF_DIR = "Day4-statefile"
     }
 
-    # stages {
+          stages {
     #     stage('git clone') {
     #         steps {
     #             git branch: 'main', url: 'https://github.com/saikrishnakolakanda/TerraformRepo.git'
     #         }
     #     }
-
+    
         stage('terraform init') {
             steps {
                 dir("${TF_DIR}") {
