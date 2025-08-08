@@ -14,11 +14,11 @@ pipeline {
     }
 
           stages {
-    #     stage('git clone') {
-    #         steps {
-    #             git branch: 'main', url: 'https://github.com/saikrishnakolakanda/TerraformRepo.git'
-    #         }
-    #     }
+        stage('git clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/saikrishnakolakanda/TerraformRepo.git'
+            }
+        }
     
         stage('terraform init') {
             steps {
