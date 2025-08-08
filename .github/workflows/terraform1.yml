@@ -7,7 +7,7 @@ on:
       - main                # Trigger on push to main branch
 
 env:
-  TF_DIR: ./Day-2-introduction   # 📁 Terraform directory path
+  TF_DIR: ./Day4-statefile   # 📁 Terraform directory path
 
 jobs:
   terraform:
