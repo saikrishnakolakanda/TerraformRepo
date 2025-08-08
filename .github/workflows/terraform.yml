@@ -20,6 +20,9 @@ jobs:
     env:
       TF_DIR: Day4-statefile
       TF_LOG: INFO
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ap-south-1 # change to your region
 
     steps:
       - name: Checkout Repository
@@ -48,4 +51,3 @@ jobs:
         if: ${{ github.event.inputs.action == 'destroy' }}
         working-directory: ${{ env.TF_DIR }}
         run: terraform destroy -auto-approve
-
