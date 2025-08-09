@@ -16,6 +16,6 @@ resource "aws_instance" "name" {
   instance_type = "t2.micro"
   key_name = "key1"
   tags = {
-    Name = "day-3"
+    Name = "day-4"
   }
 }
